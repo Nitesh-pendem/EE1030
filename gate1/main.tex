@@ -1,0 +1,166 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}
+
+%\def\inputGnumericTable{}                                
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{\textbf{2013-AE-1-13}}
+\author{AI24BTEC11026 - pendem nitesh sri satya}
+\maketitle
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\columnsep}{2.5em}
+\begin{enumerate}
+[start=1]
+\item The directional derivative of the function $f(x,y)=\frac{x^2+xy^2}{\sqrt{5}}$ in the direction $\overrightarrow{a}=2 \hat{i}-4 \hat{j}$ at $(x,y)=(1,1)$ is 
+\begin{enumerate}
+    \item $-\frac{1}{\sqrt{5}}$
+    \item $-\frac{2}{\sqrt{5}}$
+    \item $0$
+    \item $-\frac{1}{5} $\\
+\end{enumerate}
+
+\item The value of $\int_4^5 \frac{x+2}{x^2+4x-21} dx$ is 
+\begin{enumerate}
+    \item $ln\sqrt{\frac{24}{11}}$
+    \item $ln\sqrt{\frac{12}{11}}$
+    \item $ln\sqrt{2}$
+    \item $ln(\frac{12}{11})$\\
+\end{enumerate}
+
+\item At $x=0$ the function $y=\abs{x}$ is
+\begin{enumerate}
+    \item continuous but not differentiable
+    \item continuous and differentiable
+    \item not continuous but differentiable
+    \item not continuous and not differentiable \\
+\end{enumerate}
+
+\item one of the eigenvectors of the matrix \\ $A=\myvec{1 & -1 & 0\\ 0 & 1 & -1\\-1 & 0 & 1 }$ is $v=  \myvec{1 \\ 1 \\ 1}$ \\ The corresponding eigenvalue is \underline{\hspace{1cm}}.\\
+
+\item which one of the following is the most stable configuration of an airplane in roll?
+\begin{enumerate}
+    \item Sweep back, anhedral and low ring
+    \item Sweep forward, dihedral and low wing
+    \item Sweep forward, anhedral and high wing
+    \item Sweep back, dihedral and high wing \\
+\end{enumerate}
+
+\item which one of the following flight instruments is used on an aircraft to determine its attitude in flight?
+\begin{enumerate}
+    \item Vertical speed indicator
+    \item Altimeter
+    \item Artificial Horizon
+    \item Turn-bank indicator \\
+\end{enumerate}
+
+\item A supersonic airplane is expected to fly at both subsonic and supersonic speeds during its whole flight course. which one of the following statements is TRUE?
+\begin{enumerate}
+    \item Airplane will experience less stability in pitch at supersonic speeds than at subsonic speeds
+    \item Airplane will feel no change in pitch stability
+    \item Airplane will experience more stability in pitch at supersonic speeds than at subsonic speeds
+    \item pitch stability cannot be inferred from the information given \\
+\end{enumerate}
+
+\item which one of the following is favorable for an airplane operation?
+\begin{enumerate}
+    \item Tail wind in cruise and head wind in landing
+    \item Tail wind both in cruise and landing
+    \item head wind both in cruise and landing
+    \item Head wind in cruise and tail wind in landing \\
+\end{enumerate}
+
+\item which one of the following is TRUE with respect to phugoid mode of an aircraft?
+\begin{enumerate}
+    \item Frequency is directly proportional to flight speed
+    \item Frequency is inversely proportional to flight speed
+    \item Frequency is directly proportional to the square root of flight speed
+    \item Frequency is inversely proportional to the square root of flight speed \\
+\end{enumerate}
+
+\item the $x$ and $y$ velocity components of a two dimensional flow fled are, $u=\frac{cy}{x^2+y^2},v=\frac{cx}{x^2+y^2}$ where $c$ is a constant. The streamlines are a family of 
+\begin{enumerate}
+    \item hyperbolas
+    \item parabolas
+    \item ellipses
+    \item circles \\
+\end{enumerate}
+
+\item which one of the following statements is NOT TRUE for a supersonic flow?
+\begin{enumerate}
+   \item over a gradual expansion, entropy remains constant
+    \item over a gradual expansion corner, entropy can increase
+     \item over a gradual compression, entropy can remain constant
+     \item over a sharp compression corner, entropy increases \\
+\end{enumerate}
+
+\item consider a compressible flow where an elemental volume of the fluid is $\delta \rho$, moving with velocity $\overrightarrow{V}$. which one of the following expressions is TRUE?
+\begin{enumerate}
+    \item $\nabla \cdot \overrightarrow{V}=\frac{1}{\delta \rho} \frac{D\delta \rho}{Dt}$
+    \item $\nabla \cdot (\nabla \times \overrightarrow{V})=\frac{1}{\delta \rho} \frac{D\delta \rho}{Dt}$
+    \item $\nabla \cdot \frac{D\overrightarrow{V}}{Dt}=\frac{1}{\delta \rho} \frac{D\delta \rho}{Dt}$
+    \item $\overrightarrow{V} \cdot (\nabla \times \overrightarrow{V})=\frac{1}{\delta \rho} \frac{D\delta \rho}{Dt}$ \\
+\end{enumerate}
+
+\item consider a thin flat plate airfoil at a small angle $\alpha$ to an oncoming supersonic stream of air. Assuming the flow to be inviscid, $\frac{C_d}{c_1^2}$ is
+\begin{enumerate}
+    \item zero
+    \item independent of $\alpha$
+    \item proportional to $\alpha$
+    \item proportional to $\alpha^2$ \\
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
+
